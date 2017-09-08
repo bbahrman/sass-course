@@ -1,11 +1,111 @@
+<!-- BEM (CSS design philosophy
+BLOCK
+.site
+.article
+ELEMENT
+.site__header
+.site__main
+.site__footer
+MODIFIER
+.article--single
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>My new site</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    random text, more random text
+
+
+    <!-- HEADER -->
+
+    <header id="site__header">
+
+    </header>
+
+    <main id="site__main">
+
+        <article class="article article--single">
+
+            <header class="article__header">
+                <h1>Getting started with sass</h1>
+
+                <div class="byline">
+                    <div class="byline__box byline__author">
+                        Ben Bahrman
+                    </div>
+                    <div class="byline__box byline__time">
+                        <time>January 1, 1970</time>
+                    </div>
+                </div>
+            </header>
+            <div class="article__image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/All%C3%A9bron_September_2014.jpg" alt="Allébron September 2014.jpg" height="801" width="1200">
+            </div>
+            <!-- Actions, not a sub element of article, can be used anywhere -->
+            <div class="actions">
+                <a href="#" class="actions__btn actions__btn--code">View Code</a>
+                <a href="#" class="actions__btn actions__btn--demo">View Demo</a>
+            </div>
+
+            <div class="article__inner">
+                <aside class="sidebar">
+                    <ul class="table-of-contents">
+                        <li><a href="#">Introduction</a></li>
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">Implementing</a></li>
+                        <li><a href="#">Building</a></li>
+                        <li><a href="#">Conclusion</a></li>
+                    </ul>
+
+                    <div class="ad">
+                        <img src="http://placekitten.com/g/300/250">
+                    </div>
+                </aside>
+
+                <div class="article__content content">
+                    <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Getting Started</a></li>
+                    <li><a href="#">Implementing</a></li>
+                    <li><a href="#">Building</a></li>
+                    <li><a href="#">Conclusion</a></li>
+                    </ul>
+                    <h2>Introduction</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse luctus cursus nisl, eu varius metus rutrum vel. Nunc eleifend volutpat erat ut mattis. Phasellus fringilla leo suscipit, sollicitudin libero in, molestie neque. Ut suscipit ligula sit amet nunc pellentesque egestas. Nullam tincidunt dictum elit, nec malesuada magna efficitur eget. Etiam scelerisque imperdiet varius. Vivamus non tortor a lacus scelerisque semper sit amet et neque.</p>
+
+                    <p>Aliquam vehicula cursus euismod. Etiam maximus, ante varius imperdiet rutrum, neque ipsum scelerisque nisi, ac sodales odio felis ultricies lacus. Donec porta dignissim lorem eu rhoncus. Cras ultricies odio ut dui molestie laoreet. Integer dignissim accumsan elit congue cursus. Cras vel dui euismod, porta ipsum eu, imperdiet elit. Donec leo nibh, mollis eu eros ac, elementum viverra nisl. Nulla sit amet malesuada nunc. Donec at nisl quis eros tristique pulvinar in eget lectus. Aliquam lobortis a ante eleifend hendrerit.</p>
+
+                    <p>Ut quis maximus sem, feugiat molestie ligula. Aliquam vel elit risus. Proin ac condimentum eros. Aenean nulla augue, feugiat ut ultrices vitae, dignissim sed orci. Sed imperdiet pharetra metus, id eleifend diam efficitur eget. In eget dictum urna. In at lorem a sem tristique laoreet. Nullam auctor nisl eu ligula tempus, in gravida orci lobortis. Aenean commodo metus vel augue euismod rutrum. Maecenas vel finibus lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in dapibus mauris, nec fermentum massa. Donec ornare lectus eget arcu aliquet dapibus. Nulla efficitur euismod rutrum. Donec facilisis, mi et elementum fringilla, ligula felis fermentum magna, vel fringilla felis ipsum eleifend libero. Mauris gravida nibh id ipsum ornare ultrices.</p>
+
+                    <p>Integer pretium dui eget sem cursus consectetur. Sed faucibus ultricies aliquam. Donec ante lorem, molestie ut viverra at, placerat mattis purus. Maecenas lobortis in lorem in sodales. Nulla sollicitudin id ex at rhoncus. Donec gravida maximus sodales. Aliquam quis accumsan nibh, sed mollis lectus. Morbi id ex justo. Nam ornare, magna mollis eleifend ornare, velit lectus ullamcorper lectus, et maximus ligula lacus eget neque. Sed rhoncus eros vitae gravida dictum. Vestibulum lobortis felis ac sapien elementum, congue vestibulum justo rhoncus. Vivamus faucibus accumsan nunc sed iaculis. Curabitur nec nisi tristique, condimentum purus non, hendrerit mi. Curabitur sodales aliquam ante, in feugiat ipsum scelerisque id. Maecenas mollis ex in felis tempus, in pretium arcu convallis. Donec aliquam lacinia elit.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/All%C3%A9bron_September_2014.jpg" alt="Allébron September 2014.jpg" height="801" width="1200">
+                    <h3>A smaller title</h3>
+                    <pre>
+                    <code>
+                        &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Implementing&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Building&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+                        &lt;&gt;
+                    </code>
+                    </pre>
+                    <p>Quisque quis tristique felis, sed tincidunt dolor. Sed blandit consectetur tortor, eu dapibus neque sagittis quis. Vivamus tincidunt velit nec lacus blandit, sit amet mattis lectus consequat. Ut blandit, tellus vel vestibulum consectetur, ante ligula tincidunt ipsum, eget sollicitudin diam elit sit amet dui. Suspendisse cursus, nulla sit amet hendrerit pharetra, diam orci sagittis turpis, ac placerat sem magna non libero. Duis vitae pulvinar est. Fusce et magna varius, scelerisque augue et, accumsan felis. Curabitur sodales quam lacinia condimentum laoreet. Aenean vehicula tellus nisi, quis interdum nisi auctor vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse viverra dignissim pellentesque. Suspendisse quam ex, viverra non odio vel, dignissim tincidunt augue. Nullam sit amet libero mi. Aliquam in luctus neque. Sed sit amet volutpat leo.</p>
+                </div>
+            </div>
+        </article>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="site__footer">
+
+    </footer>
 </body>
 </html>
